@@ -1,4 +1,4 @@
- name: backend configuration
+- name: backend configuration
   hosts: backend
   become: yes
   roles: 
