@@ -1,0 +1,14 @@
+- name: nginx
+  hosts: all
+  become: yes #sudo access
+  tasks: # to install nginx on remote servers
+  - name: install nginx
+    ansible.builtin.package: #heterongenous module that can work for all distribution
+      name: nginx
+      state: present
+
+  - name: run nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
