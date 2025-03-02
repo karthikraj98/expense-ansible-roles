@@ -2,6 +2,6 @@
   hosts: backend
   become: yes     #remote server
   vars_files:
-  - /var/expense/credentials_mysql.yaml #ansible server
+  - /var/expense/credentails_mysql.yaml #ansible server
   roles: 
   - backend
